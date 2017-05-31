@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DemoViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property (strong, nonatomic) DemoViewController * mainView;
 @end
 

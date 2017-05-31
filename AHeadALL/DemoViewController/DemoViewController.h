@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DemoViewController.h
 //  AHeadALL
 //
 //  Created by SkullTree on 5/23/2560 BE.
@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+@interface DemoViewController : UIViewController
 
 @end
-
