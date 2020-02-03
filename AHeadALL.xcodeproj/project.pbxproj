@@ -16,6 +16,12 @@
 		7009979A1ED41AFC00ECA462 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700997981ED41AFC00ECA462 /* DemoViewController.m */; };
 		7009979B1ED41AFC00ECA462 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700997991ED41AFC00ECA462 /* DemoViewController.xib */; };
 		702934761ED45CB700F89AEC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702934751ED45CB700F89AEC /* Security.framework */; };
+		7053169F1EDEE22900D23365 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7053169E1EDEE22900D23365 /* IntentHandler.m */; };
+		705316A71EDEE22A00D23365 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705316A61EDEE22A00D23365 /* IntentsUI.framework */; };
+		705316AB1EDEE22A00D23365 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705316AA1EDEE22A00D23365 /* IntentViewController.m */; };
+		705316AE1EDEE22A00D23365 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705316AC1EDEE22A00D23365 /* MainInterface.storyboard */; };
+		705316B21EDEE22A00D23365 /* TwinDemoSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 705316A51EDEE22900D23365 /* TwinDemoSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		705316B51EDEE22A00D23365 /* TwinDemoSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7053169B1EDEE22900D23365 /* TwinDemoSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		873AD1672BF8E1ED4A9DDA24 /* libPods-AHeadALLTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A24654BFCE61241B3CC6930 /* libPods-AHeadALLTests.a */; };
 		D2FCD0832B6DA6DCD2DE5C0B /* libPods-AHeadALL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6292112D8D48BD3998C67E /* libPods-AHeadALL.a */; };
 		FC9FBF196719D60847B854D9 /* libPods-AHeadALLUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196B64797849D6EFF8F4EE8C /* libPods-AHeadALLUITests.a */; };
@@ -36,7 +42,36 @@
 			remoteGlobalIDString = 7009975F1ED41AC400ECA462;
 			remoteInfo = AHeadALL;
 		};
+		705316B01EDEE22A00D23365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700997581ED41AC400ECA462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705316A41EDEE22900D23365;
+			remoteInfo = TwinDemoSiriUI;
+		};
+		705316B31EDEE22A00D23365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700997581ED41AC400ECA462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7053169A1EDEE22900D23365;
+			remoteInfo = TwinDemoSiri;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		705316BC1EDEE22A00D23365 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				705316B51EDEE22A00D23365 /* TwinDemoSiri.appex in Embed App Extensions */,
+				705316B21EDEE22A00D23365 /* TwinDemoSiriUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		196B64797849D6EFF8F4EE8C /* libPods-AHeadALLUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHeadALLUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +98,16 @@
 		702934711ED45A9500F89AEC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "Pods/../build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
 		702934751ED45CB700F89AEC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		705316961EDEE08600D23365 /* AHeadALL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AHeadALL.entitlements; sourceTree = "<group>"; };
+		7053169B1EDEE22900D23365 /* TwinDemoSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TwinDemoSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7053169D1EDEE22900D23365 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		7053169E1EDEE22900D23365 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		705316A01EDEE22900D23365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705316A51EDEE22900D23365 /* TwinDemoSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TwinDemoSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		705316A61EDEE22A00D23365 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		705316A91EDEE22A00D23365 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		705316AA1EDEE22A00D23365 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		705316AD1EDEE22A00D23365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		705316AF1EDEE22A00D23365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77EE9B28A3502C5129D1EAE7 /* Pods-AHeadALLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHeadALLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHeadALLTests/Pods-AHeadALLTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA6B03419F56C277BD55CD1F /* Pods-AHeadALLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHeadALLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHeadALLTests/Pods-AHeadALLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE6292112D8D48BD3998C67E /* libPods-AHeadALL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHeadALL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +140,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		705316981EDEE22900D23365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705316A21EDEE22900D23365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705316A71EDEE22A00D23365 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,6 +177,8 @@
 				700997621ED41AC400ECA462 /* AHeadALL */,
 				7009977C1ED41AC400ECA462 /* AHeadALLTests */,
 				700997871ED41AC400ECA462 /* AHeadALLUITests */,
+				7053169C1EDEE22900D23365 /* TwinDemoSiri */,
+				705316A81EDEE22A00D23365 /* TwinDemoSiriUI */,
 				700997611ED41AC400ECA462 /* Products */,
 				26B66C6C7E6A43A117E54C05 /* Pods */,
 				D83D95E68CDD9F63EE153068 /* Frameworks */,
@@ -129,6 +191,8 @@
 				700997601ED41AC400ECA462 /* AHeadALL.app */,
 				700997791ED41AC400ECA462 /* AHeadALLTests.xctest */,
 				700997841ED41AC400ECA462 /* AHeadALLUITests.xctest */,
+				7053169B1EDEE22900D23365 /* TwinDemoSiri.appex */,
+				705316A51EDEE22900D23365 /* TwinDemoSiriUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +248,27 @@
 			name = Demo;
 			sourceTree = "<group>";
 		};
+		7053169C1EDEE22900D23365 /* TwinDemoSiri */ = {
+			isa = PBXGroup;
+			children = (
+				7053169D1EDEE22900D23365 /* IntentHandler.h */,
+				7053169E1EDEE22900D23365 /* IntentHandler.m */,
+				705316A01EDEE22900D23365 /* Info.plist */,
+			);
+			path = TwinDemoSiri;
+			sourceTree = "<group>";
+		};
+		705316A81EDEE22A00D23365 /* TwinDemoSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				705316A91EDEE22A00D23365 /* IntentViewController.h */,
+				705316AA1EDEE22A00D23365 /* IntentViewController.m */,
+				705316AC1EDEE22A00D23365 /* MainInterface.storyboard */,
+				705316AF1EDEE22A00D23365 /* Info.plist */,
+			);
+			path = TwinDemoSiriUI;
+			sourceTree = "<group>";
+		};
 		D83D95E68CDD9F63EE153068 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +277,7 @@
 				EE6292112D8D48BD3998C67E /* libPods-AHeadALL.a */,
 				5A24654BFCE61241B3CC6930 /* libPods-AHeadALLTests.a */,
 				196B64797849D6EFF8F4EE8C /* libPods-AHeadALLUITests.a */,
+				705316A61EDEE22A00D23365 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,10 +295,13 @@
 				7009975E1ED41AC400ECA462 /* Resources */,
 				9892B17FD5735704B65722F7 /* [CP] Embed Pods Frameworks */,
 				5BDFE86AD5AE39A05D096A0E /* [CP] Copy Pods Resources */,
+				705316BC1EDEE22A00D23365 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				705316B11EDEE22A00D23365 /* PBXTargetDependency */,
+				705316B41EDEE22A00D23365 /* PBXTargetDependency */,
 			);
 			name = AHeadALL;
 			productName = AHeadALL;
@@ -261,6 +350,40 @@
 			productReference = 700997841ED41AC400ECA462 /* AHeadALLUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7053169A1EDEE22900D23365 /* TwinDemoSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 705316B91EDEE22A00D23365 /* Build configuration list for PBXNativeTarget "TwinDemoSiri" */;
+			buildPhases = (
+				705316971EDEE22900D23365 /* Sources */,
+				705316981EDEE22900D23365 /* Frameworks */,
+				705316991EDEE22900D23365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwinDemoSiri;
+			productName = TwinDemoSiri;
+			productReference = 7053169B1EDEE22900D23365 /* TwinDemoSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		705316A41EDEE22900D23365 /* TwinDemoSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 705316B61EDEE22A00D23365 /* Build configuration list for PBXNativeTarget "TwinDemoSiriUI" */;
+			buildPhases = (
+				705316A11EDEE22900D23365 /* Sources */,
+				705316A21EDEE22900D23365 /* Frameworks */,
+				705316A31EDEE22900D23365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwinDemoSiriUI;
+			productName = TwinDemoSiriUI;
+			productReference = 705316A51EDEE22900D23365 /* TwinDemoSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,6 +413,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7009975F1ED41AC400ECA462;
 					};
+					7053169A1EDEE22900D23365 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 57RNBV4CEC;
+						ProvisioningStyle = Automatic;
+					};
+					705316A41EDEE22900D23365 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 57RNBV4CEC;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7009975B1ED41AC400ECA462 /* Build configuration list for PBXProject "AHeadALL" */;
@@ -308,6 +441,8 @@
 				7009975F1ED41AC400ECA462 /* AHeadALL */,
 				700997781ED41AC400ECA462 /* AHeadALLTests */,
 				700997831ED41AC400ECA462 /* AHeadALLUITests */,
+				7053169A1EDEE22900D23365 /* TwinDemoSiri */,
+				705316A41EDEE22900D23365 /* TwinDemoSiriUI */,
 			);
 		};
 /* End PBXProject section */
@@ -334,6 +469,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705316991EDEE22900D23365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705316A31EDEE22900D23365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705316AE1EDEE22A00D23365 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +654,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		705316971EDEE22900D23365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7053169F1EDEE22900D23365 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705316A11EDEE22900D23365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705316AB1EDEE22A00D23365 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -517,6 +683,16 @@
 			target = 7009975F1ED41AC400ECA462 /* AHeadALL */;
 			targetProxy = 700997851ED41AC400ECA462 /* PBXContainerItemProxy */;
 		};
+		705316B11EDEE22A00D23365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 705316A41EDEE22900D23365 /* TwinDemoSiriUI */;
+			targetProxy = 705316B01EDEE22A00D23365 /* PBXContainerItemProxy */;
+		};
+		705316B41EDEE22A00D23365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7053169A1EDEE22900D23365 /* TwinDemoSiri */;
+			targetProxy = 705316B31EDEE22A00D23365 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -526,6 +702,14 @@
 				700997721ED41AC400ECA462 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		705316AC1EDEE22A00D23365 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				705316AD1EDEE22A00D23365 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -713,6 +897,54 @@
 			};
 			name = Release;
 		};
+		705316B71EDEE22A00D23365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = TwinDemoSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinsynergy.TwinDemo.TwinDemoSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		705316B81EDEE22A00D23365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = TwinDemoSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinsynergy.TwinDemo.TwinDemoSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		705316BA1EDEE22A00D23365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = TwinDemoSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinsynergy.TwinDemo.TwinDemoSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		705316BB1EDEE22A00D23365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = TwinDemoSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinsynergy.TwinDemo.TwinDemoSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,6 +983,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		705316B61EDEE22A00D23365 /* Build configuration list for PBXNativeTarget "TwinDemoSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				705316B71EDEE22A00D23365 /* Debug */,
+				705316B81EDEE22A00D23365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		705316B91EDEE22A00D23365 /* Build configuration list for PBXNativeTarget "TwinDemoSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				705316BA1EDEE22A00D23365 /* Debug */,
+				705316BB1EDEE22A00D23365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
